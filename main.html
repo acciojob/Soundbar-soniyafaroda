@@ -1,26 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Soundbar</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Soundbar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app">
+
+<div class="container">
     <h1>Soundbar</h1>
-
-    <!-- Buttons container (required id) -->
-    <section id="buttons" class="buttons-area">
-      <!-- Buttons will be created here by script.js -->
-    </section>
-
-    <!-- Stop button should have class "stop" (requirement) -->
-    <div class="controls">
-      <button class="stop" id="stopBtn">STOP</button>
+    <div id="buttons">
+        <!-- Buttons will be generated here -->
+        <button class="btn" data-sound="sound1.mp3">Sound 1</button>
+        <button class="btn" data-sound="sound2.mp3">Sound 2</button>
+        <button class="btn" data-sound="sound3.mp3">Sound 3</button>
+        <button class="btn" data-sound="sound4.mp3">Sound 4</button>
+        <button class="stop">Stop</button>
     </div>
-  </main>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
